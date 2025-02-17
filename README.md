@@ -1,1 +1,1 @@
-# Rock-Paper-Scissors
+# Rock Paper and Scissor Project
