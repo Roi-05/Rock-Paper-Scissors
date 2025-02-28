@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+
+        }
+        .choice-container {
+            width: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img {
+            width: 200px; height: 200px;
+            object-fit: cover;
+            transition: scale .25s;
+            cursor: pointer;
+        }
+        img:hover {
+            scale: 1.03;
+        }
+        button {
+            border: none;
+            background-color: white;
+        }
+        #result {
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            align-items: center;
+            padding: 40px 10px;
         }
     </style>
 </head>
@@ -17,5 +45,14 @@
     <h1>
         Rock, Paper, and Scissor Game!
     </h1>
+    <div class="choice-container">
+        <button id="rock"><img src="Pictures/rock.webp" alt="Rock"></button>
+        <button id="paper"><img src="Pictures/paper.jpg" alt="Paper"></button>
+        <button id="scissor"><img src="Pictures/scissor.webp" alt="Scissor"></button>
+    </div>
+    <div id="result">
+
+    </div>
+
 </body>
 </html>
